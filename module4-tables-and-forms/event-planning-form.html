@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali</title>
+    <style>
+        table, th, td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Table with event details -->
+    <table>
+        <tr>
+            <th>Title</th>
+            <td>Details</td>
+        </tr>
+        <tr>
+            <th>Event</th>
+            <td><strong>Diwali Carnival 2k25</strong></td>
+        </tr>
+        <tr>
+            <th>Timings</th>
+            <td>
+                <ul>
+                    <li>18th of July, 2025 @10:00PM</li>
+                    <li>19th of July, 2025 @08:00PM</li>
+                    <li>20th of July, 2025 @10:00PM</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Cyber Gateway, Madhapur, Hyderabad</td>
+        </tr>
+        <tr>
+            <td colspan="2">All Are Welcome!!!</td>
+        </tr>
+    </table>
+
+    <!-- Form for the collection of data for the event -->
+    <form action="form_registration.js">
+        <fieldset>
+            <legend>Event Registration</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name"> <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your second name"> <br>
+            <label for="email">Email</label>
+            <fieldset>
+                <legend>Select Events You Like to Join</legend>
+                <input type="text" id="email" name="email"> <br>
+                <input type="checkbox" id="workshop1" name="workshop1" value="Day1">
+                <label for="workshop1">18th of July, 2025 @10:00PM</label> <br>
+                <input type="checkbox" id="workshop1" name="workshop1" value="Day1">
+                <label for="workshop1">19th of July, 2025 @08:00PM</label> <br>
+                <input type="checkbox" id="workshop1" name="workshop1" value="Day1">
+                <label for="workshop1">20th of July, 2025 @10:00PM</label> <br>
+            </fieldset>
+            
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
