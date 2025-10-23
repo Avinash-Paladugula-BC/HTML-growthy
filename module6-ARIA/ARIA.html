@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diwali</title>
+  <style>
+    table, th, td {
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Table with event details -->
+  <table role="table" aria-label="Diwali event details">
+    <tr role="row">
+      <th role="columnheader">Title</th>
+      <td role="cell">Details</td>
+    </tr>
+    <tr role="row">
+      <th role="rowheader">Event</th>
+      <td role="cell"><strong>Diwali Carnival 2k25</strong></td>
+    </tr>
+    <tr role="row">
+      <th role="rowheader">Timings</th>
+      <td role="cell">
+        <ul role="list">
+          <li role="listitem">18th of July, 2025 @10:00PM</li>
+          <li role="listitem">19th of July, 2025 @08:00PM</li>
+          <li role="listitem">20th of July, 2025 @10:00PM</li>
+        </ul>
+      </td>
+    </tr>
+    <tr role="row">
+      <th role="rowheader">Location</th>
+      <td role="cell">Cyber Gateway, Madhapur, Hyderabad</td>
+    </tr>
+    <tr role="row">
+      <td colspan="2" role="cell" aria-live="polite">All Are Welcome!!!</td>
+    </tr>
+  </table>
+
+  <!-- Form for the collection of data for the event -->
+  <form action="form_registration.js" role="registrationform" aria-labelledby="formTitle">
+    <fieldset>
+      <legend id="formTitle">Event Registration</legend>
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Enter your first name" aria-required="true"> <br>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Enter your lasdt name" aria-required="true"> <br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" aria-required="true"> <br>
+
+      <fieldset aria-labelledby="timingLabel">
+        <legend id="timingLabel">Select Events You Like to Join</legend>
+        <input type="checkbox" id="day1" name="timing" value="Day1">
+        <label for="day1">18th of July, 2025 @10:00PM</label> <br>
+        <input type="checkbox" id="day2" name="timing" value="Day2">
+        <label for="day2">19th of July, 2025 @08:00PM</label> <br>
+        <input type="checkbox" id="day3" name="timing" value="Day3">
+        <label for="day3">20th of July, 2025 @10:00PM</label> <br>
+      </fieldset>
+      <input type="reset" value="Reset" aria-label="Reset the form">
+      <input type="submit" value="Submit" aria-label="Submit registration form">
+    </fieldset>
+  </form>
+</body>
+</html>
